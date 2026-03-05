@@ -22,20 +22,6 @@ proxies:
     username: "@bdiix_bypass"
     password: "@bdiix_bypass"
 
-  - name: "STLBD"
-    type: socks5
-    server: 103.166.253.92
-    port: 1088
-    username: test
-    password: test
-
-  - name: "Carnival"
-    type: socks5
-    server: 103.91.231.244
-    port: 1088
-    username: test
-    password: test
-
 proxy-groups:
   - name: "DOWNLOAD"
     type: load-balance
@@ -46,9 +32,7 @@ proxy-groups:
       - BNET
       - Windstream Communication
       - Asian Network
-      - STLBD
-      - Carnival
-
 
 rules:
+
   - MATCH,DOWNLOAD
