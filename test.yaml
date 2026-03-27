@@ -29,6 +29,11 @@ proxies:
     port: 1088
     username: test
     password: test
+  - name: "Duck"
+    type: http
+    server: ecgay.duckdns.org
+    port: 46902
+    udp: true
     
 proxy-groups:
   
@@ -40,6 +45,7 @@ proxy-groups:
       - "Asian Network"
       - "STLBD"
       - "Carnival"
+      - "Duck"
     url: https://www.gstatic.com/generate_204
     interval: 10
     strategy: round-robin
