@@ -22,12 +22,6 @@ proxies:
     username: "@bdiix_bypass"
     password: "@bdiix_bypass"
 
-  - name: "Duck"
-    type: http
-    server: ecgay.duckdns.org
-    port: 46902
-    udp: true
-
 proxy-groups:
   - name: "DOWNLOAD"
     type: load-balance
@@ -38,7 +32,6 @@ proxy-groups:
       - BNET
       - Windstream Communication
       - Asian Network
-      - Duck
 
 rules:
 
